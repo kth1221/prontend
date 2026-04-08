@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hyobin-card{
+            width: 300px;
+            margin: 50px auto;
+            background: radial-gradient(#ffffff 0%, #ffffff 50%, #777777 95%);
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.15);
+            position: relative;
+        }
+        .hyobin-card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .hyobin-card h2{
+            color: #313131;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .hyobin-card p{
+            color: #242424; font-size: 1.1rem; line-height: 1.5;
+        }
+        .hyobin-card .secret-memo{
+            visibility: hidden;
+            text-align: center;
+            text-decoration:line-through;
+            font-weight: 300;
+        }
+        .hyobin-card:hover .secret-memo{
+            visibility: visible;
+        }
+        .hyobin-card .badge{
+            position: absolute;
+            top: -30px;
+            left: -80px;
+            font-size: 3em;
+            font-weight: 700;
+            transform: rotate(-30deg);
+            border: 5px dashed #000000;
+            background-color: #ffffff;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+        <!-- 팀원 카드 시작 -->
+        <div class="hyobin-card">
+            <!-- 개인별로 배지 추가하기 (absolute 실습) -->
+            <!-- <div class="badge" style="position: absolute; ...">Hot🔥</div> -->
+            <div class="badge">Wow‼️</div>
+            <img src="https://img.freepik.com/premium-photo/moderndesktopcomputerconceptillustration_1237084-13718.jpg?w=2000" alt="컴퓨터 셋업">
+            <h2>📢 김효빈의 꿈</h2>
+            <p>💻 1. 컴퓨터 관련 자격증 하나 더 따기</p>
+            <p>🎮️ 2. 바이브 코딩으로 게임 하나 만들기</p>
+            <div class="secret-memo">
+                TMI: 목표를 이거 쓰면서 방금 세움
+            </div>
+            
+            <!-- 개인별로 비밀 메모 추가하기 (visibility 실습) -->
+            <!-- <div class="secret-memo" style="visibility: hidden;">🤫 TMI: 수영 못함</div> -->
+        </div>
+        <!-- 팀원 카드 끝 -->
+</body>
+</html>
