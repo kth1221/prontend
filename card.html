@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hyobin-card img{
+            width: 400px;
+        }
+        .hyobin-card{
+            position: relative;
+            min-width: 500px;
+            min-height: 500px;
+        }
+        .hyobin-card .secret-memo{
+            visibility: hidden;
+        }
+        .hyobin-card:hover .secret-memo{
+            visibility: visible;
+        }
+        .hyobin-card .badge{
+            position: absolute;
+            top: -40px;
+            left: -40px;
+            font-size: 3em;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+        <!-- 팀원 카드 시작 -->
+        <div class="hyobin-card">
+            <!-- 개인별로 배지 추가하기 (absolute 실습) -->
+            <!-- <div class="badge" style="position: absolute; ...">Hot🔥</div> -->
+            <div class="badge">Wow‼️</div>
+            <img src="https://img.freepik.com/premium-photo/moderndesktopcomputerconceptillustration_1237084-13718.jpg?w=2000" alt="컴퓨터 셋업">
+            <h2>✨ 김효빈의 꿈</h2>
+            <p>💻 1. 컴퓨터 관련 자격증 하나 더 따기</p>
+            <p>🎮️ 2. 바이브 코딩으로 게임 하나 만들기</p>
+            <div class="secret-memo">
+                TMI: 목표를 이거 쓰면서 방금 세움
+            </div>
+            
+            <!-- 개인별로 비밀 메모 추가하기 (visibility 실습) -->
+            <!-- <div class="secret-memo" style="visibility: hidden;">🤫 TMI: 수영 못함</div> -->
+        </div>
+        <!-- 팀원 카드 끝 -->
+</body>
+</html>
