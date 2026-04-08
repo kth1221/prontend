@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>버킷 카드</title>
+    <style>
+        /* 기본 카드 디자인 */
+        .card {
+            transform: rotate(-3deg);
+            transition: transform 0.3s ease, z-index 0s;
+            width: 300px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, #fffcf0 0%, #fff3b0 100%);
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.15);
+
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #c0cc00;
+            /* 포인트 컬러 */
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .secret-memo {
+            visibility: hidden;
+            /* 처음에는 숨김 */
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 1px dashed #c0cc00;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: rotate(0deg) scale(1.05);
+            /* 마우스 호버 시 회전 각도 0도, 크기 1.05배 확대 */
+            z-index: 10;
+            /* 호버 시 카드가 다른 요소 위에 올라오도록 z-index 설정 */
+        }
+
+        .card:hover .secret-memo {
+            visibility: visible;
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="badge">Hot🔥</div>
+
+        <img src="5주차 사진.jpg" alt="벚꽃 사진">
+
+        <h2>✨ 윤환이의 꿈</h2>
+        <p>🌊 1. 1학기에 문제집 3권 끝내기</p>
+        <p>💻 2. 계획적인 삶 실천하기</p>
+        <p>📈 3. Ai보다 깔끔하게 코드 짜기</p>
+
+        <div class="secret-memo">사진은 직접 찍고 왔답니다~</div>
+    </div>
+</body>
+
+</html>
